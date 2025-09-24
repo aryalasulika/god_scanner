@@ -125,8 +125,8 @@ def main():
                     return
                 q.put(port)
     except ValueError:
-    print(f"{ORANGE}[!] Format port yang Anda masukkan salah. Program berhenti.{RESET}")
-    return
+        print(f"{ORANGE}[!] Format port yang Anda masukkan salah. Program berhenti.{RESET}")
+        return
 
     # Membuat dan memulai threads
     for _ in range(num_threads):
